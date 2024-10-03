@@ -1,3 +1,4 @@
+"use client";
 import { data } from "@/data";
 import { useEffect, useState } from "react";
 import LastPage from "../last-page";

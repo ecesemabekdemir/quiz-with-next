@@ -1,3 +1,4 @@
+"use client";
 export default function Toggle({ handleToggle, isChecked }) {
   return (
     <div className="toggle">

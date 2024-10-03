@@ -1,3 +1,4 @@
+"use client";
 import Toggle from "../toogle";
 
 export default function Header({ handleToggle, slug, theme }) {

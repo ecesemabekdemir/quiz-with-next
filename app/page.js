@@ -8,9 +8,6 @@ import StartMenu from "@/components/start-menu";
 
 export default function Home() {
   const { theme, handleToggle } = useContext(ThemeContext);
-  useEffect(() => {
-    localStorage.clear();
-  }, []);
 
   return (
     <>

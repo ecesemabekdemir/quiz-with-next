@@ -6,18 +6,17 @@ export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(
-    () => localStorage.getItem("theme") === "true"
+    localStorage.theme ? localStorage.getItem("theme") : false
   );
-
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+  console.log(localStorage.theme ? localStorage.getItem("theme") : false);
 
   const handleToggle = () => {
     setTheme(!theme);
+    localStorage.theme = !theme;
   };
 
   useEffect(() => {
+    console.log("calişti", theme);
     if (theme) {
       document.body.classList.add("dark");
     } else {

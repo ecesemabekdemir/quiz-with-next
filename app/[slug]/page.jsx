@@ -3,8 +3,6 @@
 import Header from "@/components/header";
 import Question from "@/components/questions";
 import { ThemeContext } from "@/context";
-import { data } from "@/data";
-import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
 
 export default function QuizPage({ params }) {
